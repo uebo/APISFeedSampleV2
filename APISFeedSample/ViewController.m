@@ -35,7 +35,8 @@
     [self.collectionView addSubview:self.refreshControl];
     self.collectionView.alwaysBounceVertical = YES;
     
-    [self refreshAction:nil];
+    //FIXME: 更新処理
+//    [self refreshAction:nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -117,14 +118,7 @@
 //            NSLog(@"%@", response.data);
 //            
 //            //responseオブジェクトから、データを取得
-//            NSArray *objs = [response.data objectForKey:@"_objs"];
-//            
-//            NSMutableArray *m = [NSMutableArray new];
-//            for (NSDictionary *dict in objs) {
-//                //配列にデータを追加
-//                [m addObject:dict];
-//            }
-//            self.collections = [m mutableCopy];
+//            self.collections = [response.data objectForKey:@"_objs"];
 //            
 //            //テーブルを更新
 //            [self.collectionView reloadData];
