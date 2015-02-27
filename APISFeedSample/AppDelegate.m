@@ -69,8 +69,8 @@
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
     NSLog(@"APNs: デバイストークン発行成功 [デバイストークン:%@]", [deviceToken description]);
     NSDictionary *attributes = @{ // 配信端末の絞り込み検索に使用するカスタム属性
-                                 @"my-attr1-key" : @"my-attr1-val",
-                                 @"my-attr2-key" : @"my-attr2-val"
+                                 @"myattr1key" : @"myattr1val",
+                                 @"myattr2key" : @"myattr2val"
                                  };
     // FIXME: デバイストークン登録APIの実行
 //    APISPushAPIClient *api = [[APISSession sharedSession] createPushAPIClient];
